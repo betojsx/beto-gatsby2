@@ -1,16 +1,17 @@
-import React from "react";
-import { Link } from "gatsby";
-
+import React from 'react';
+import { Link } from 'gatsby';
+import Article from './styles';
+import * as moment from 'moment';
 class PostListing extends React.Component {
-  getPostList() {
+  get postList() {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
-        path: postEdge.node.fields.slug,
+        slug: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
-        date: postEdge.node.fields.date,
+        date: moment(postEdge.node.fields.date).format('DD MMM, YYYY'),
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead
       });
@@ -19,14 +20,25 @@ class PostListing extends React.Component {
   }
 
   render() {
-    const postList = this.getPostList();
     return (
       <div>
         {/* Your post list here. */
-        postList.map(post => (
-          <Link to={post.path} key={post.title}>
-            <h1>{post.title}</h1>
-          </Link>
+        this.postList.map(post => (
+          <Article key={post.slug}>
+            <header>
+              <h2>
+                <Link to={post.slug}>{post.title}</Link>
+              </h2>
+              <time dateTime="post.date">{post.date}</time>
+            </header>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: post.description || post.excerpt
+                }}
+              />
+            </section>
+          </Article>
         ))}
       </div>
     );

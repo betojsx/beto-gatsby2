@@ -3,13 +3,14 @@ import { Link } from 'gatsby';
 import { rhythm } from '../../utils/typography';
 
 const StyledHeader = styled.header`
-  height: 70px;
+  height: auto;
 `;
 
 const Symbol = styled.img`
   width: 54px;
   height: 54px;
   flex: 0 0 54px;
+  margin-right: 10px;
 `;
 
 const TitleLink = styled(Link)`
@@ -22,7 +23,7 @@ const TitleLink = styled(Link)`
   h1 {
     font-size: inherit;
     color: inherit;
-
+    margin: 0;
     &:first-of-type {
       margin-right: auto;
     }
