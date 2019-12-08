@@ -38,6 +38,8 @@
     "react-share": "^3.0.1",
     "react-twitter-widgets": "^1.7.1",
     "react-typography": "^0.16.19",
+    "styled-components": "^4.4.1",
+    "styled-media-query": "^2.1.2",
     "typography": "^0.16.19",
     "typography-theme-doelger": "^0.16.19",
     "url-join": "^4.0.0"
