@@ -1,19 +1,21 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import config from '../../data/SiteConfig';
-import './index.css';
+import Layout from './styles';
+import GlobalStyles from '../styles/global';
+import Header from '../components/Header/index';
 
 export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="layout-container">
-        <Helmet>
-          <meta name="description" content={config.siteDescription} />
-          <html lang="pt-BR" />
-        </Helmet>
-        {children}
-      </div>
+      <>
+        <Layout>
+          <Header />
+          <GlobalStyles />
+          {children}
+        </Layout>
+      </>
     );
   }
 }

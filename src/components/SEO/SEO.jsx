@@ -76,8 +76,15 @@ class SEO extends Component {
     return (
       <Helmet title={title}>
         {/* General tags */}
+        <html lang="pt-BR" />
         <meta name="description" content={description} />
         <meta name="image" content={image} />
+        <meta charSet="utf-8" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
         {/* Schema.org tags */}
         <script type="application/ld+json">
