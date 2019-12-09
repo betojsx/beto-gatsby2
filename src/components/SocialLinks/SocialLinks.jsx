@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -11,11 +11,13 @@ import {
   TwitterIcon,
   TelegramIcon,
   LinkedinIcon,
-  RedditIcon
-} from "react-share";
-import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
-import "./SocialLinks.css";
+  RedditIcon,
+  WhatsappShareButton,
+  WhatsappIcon
+} from 'react-share';
+import urljoin from 'url-join';
+import config from '../../../data/SiteConfig';
+import './SocialLinks.css';
 
 class SocialLinks extends Component {
   render() {
@@ -23,19 +25,13 @@ class SocialLinks extends Component {
     const post = postNode.frontmatter;
     const url = urljoin(config.siteUrl, config.pathPrefix, postPath);
     const iconSize = mobile ? 36 : 48;
-    const filter = count => (count > 0 ? count : "");
+    const filter = count => (count > 0 ? count : '');
     const renderShareCount = count => (
       <div className="share-count">{filter(count)}</div>
     );
 
     return (
       <div className="social-links">
-        <RedditShareButton url={url} title={post.title}>
-          <RedditIcon round size={iconSize} />
-          <RedditShareCount url={url}>
-            {count => renderShareCount(count)}
-          </RedditShareCount>
-        </RedditShareButton>
         <TwitterShareButton url={url} title={post.title}>
           <TwitterIcon round size={iconSize} />
         </TwitterShareButton>
@@ -52,9 +48,9 @@ class SocialLinks extends Component {
         >
           <LinkedinIcon round size={iconSize} />
         </LinkedinShareButton>
-        <TelegramShareButton url={url}>
-          <TelegramIcon round size={iconSize} />
-        </TelegramShareButton>
+        <WhatsappShareButton url={url} title={post.title}>
+          <WhatsappIcon round size={iconSize} />
+        </WhatsappShareButton>
       </div>
     );
   }

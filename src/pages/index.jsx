@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import SEO from '../components/SEO/SEO';
 import Layout from '../layout';
-import Listing from '../templates/listing';
+import PostListing from '../components/PostListing/PostListing';
+import config from '../../data/SiteConfig';
+import Bio from '../components/Bio/bio';
+import { graphql } from 'gatsby';
 
 export class Index extends Component {
   render() {
@@ -9,7 +12,9 @@ export class Index extends Component {
     return (
       <Layout>
         <SEO />
-        <Listing postEdges={postEdges} />
+        <PostListing postEdges={postEdges} />
+        <hr style={{ marginTop: `calc(1.16rem - 1px)` }}></hr>
+        <Bio config={config} home />
       </Layout>
     );
   }

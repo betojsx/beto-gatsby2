@@ -3,7 +3,7 @@ const config = {
   siteTitleShort: 'Beto', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'Beto \u22C4 Front End Developer', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://gatsby-advanced-starter-demo.netlify.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://betoo.com.br', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: 'Beto é Front End Developer e apaixonado por Javascript', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
@@ -16,11 +16,11 @@ const config = {
   postsPerPage: 4, // Amount of posts displayed per listing page.
   userName: 'Beto da Silva', // Username to display in the author segment.
   userEmail: 'oi@betoo.com', // Email used for RSS feed's author segment
-  userTwitter: '', // Optionally renders "Follow Me" in the UserInfo segment.
+  userTwitter: '_betojs', // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: 'Recife, Brazil', // User location to display in the author segment.
-  userAvatar: 'https://api.adorable.io/avatars/150/test.png', // User avatar to display in the author segment.
+  userAvatar: '/static/assets/images/profile-pic.jpg', // User avatar to display in the author segment.
   userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+    'Front End Developer há um ano trabalhando remoto. Curioso e autodidata. Abandonou Ciência da Computação para se dedicar a criar interfaces e fazer besteiras com JavaScript.', // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
@@ -39,7 +39,7 @@ const config = {
       iconClassName: 'fa fa-envelope'
     }
   ],
-  copyright: 'Copyright © 2019. Advanced User', // Copyright string for the footer of the website and RSS feed.
+  copyright: 'Copyright © 2019. Beto da Silva ─ Front End Developer', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#e0e0e0' // Used for setting manifest background color.
 };

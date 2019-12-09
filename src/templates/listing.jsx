@@ -50,30 +50,30 @@ class Listing extends React.Component {
 
 export default Listing;
 
-// /* eslint no-undef: "off" */
-// export const listingQuery = graphql`
-//   query ListingQuery($skip: Int!, $limit: Int!) {
-//     allMarkdownRemark(
-//       sort: { fields: [fields___date], order: DESC }
-//       limit: $limit
-//       skip: $skip
-//     ) {
-//       edges {
-//         node {
-//           fields {
-//             slug
-//             date
-//           }
-//           excerpt
-//           timeToRead
-//           frontmatter {
-//             title
-//             tags
-//             cover
-//             date
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+/* eslint no-undef: "off" */
+export const listingQuery = graphql`
+  query ListingQuery($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            date
+          }
+          excerpt
+          timeToRead
+          frontmatter {
+            title
+            tags
+            cover
+            date
+          }
+        }
+      }
+    }
+  }
+`;

@@ -3,7 +3,8 @@ import { Link } from 'gatsby';
 import Article from './styles';
 import * as moment from 'moment';
 class PostListing extends React.Component {
-  get postList() {
+  postList() {
+    if (!this.props.postEdges) return [];
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
@@ -20,10 +21,11 @@ class PostListing extends React.Component {
   }
 
   render() {
+    const posts = this.postList();
     return (
       <div>
         {/* Your post list here. */
-        this.postList.map(post => (
+        posts.map(post => (
           <Article key={post.slug}>
             <header>
               <h2>
