@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components';
-
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -63,9 +62,6 @@ const GlobalStyles = createGlobalStyle`
     background: #1e1f21;
   }
 
-  pre::-webkit-scrollbar {
-    width: 12px;
-  }
   
   pre::-webkit-scrollbar-track {
       background: #c5c8c6;
@@ -78,6 +74,21 @@ const GlobalStyles = createGlobalStyle`
       border-radius: 10px;
       box-shadow: inset 0 0 2px 1px rgba(110, 7, 183, 0.7); 
       cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .gatsby-highlight{
+      padding: 4px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    pre::-webkit-scrollbar-thumb {
+      background: #1d1f21;
+      border-radius: 10px;
+      box-shadow: inset 0 0 2px 1px rgba(110, 7, 183, 0.7); 
+      cursor: pointer;
+      height: 8px;
+    }
   }
   /* body.dark {
     --borders: #38444d;
