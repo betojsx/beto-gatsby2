@@ -9,12 +9,16 @@ import SEO from '../components/SEO/SEO';
 import Bio from '../components/Bio/bio';
 import Footer from '../components/Footer/Footer';
 import config from '../../data/SiteConfig';
+import { Cover } from './post.style';
+import Image from 'gatsby-image';
+
 import './b16-tomorrow-dark.css';
 import './post.css';
 
 export default class PostTemplate extends React.Component {
   render() {
     const { data, pageContext } = this.props;
+    console.log(data);
     const { slug } = pageContext;
     const postNode = data.markdownRemark;
     const post = postNode.frontmatter;
@@ -33,6 +37,12 @@ export default class PostTemplate extends React.Component {
           <SEO postPath={slug} postNode={postNode} postSEO />
           <div>
             <h1>{post.title}</h1>
+            <Cover>
+              <Image
+                fluid={post.cover.childImageSharp.fluid}
+                alt={post.title}
+              />
+            </Cover>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             <div className="post-meta">
               <PostTags tags={post.tags} />
@@ -57,7 +67,13 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
-        cover
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         date
         category
         tags

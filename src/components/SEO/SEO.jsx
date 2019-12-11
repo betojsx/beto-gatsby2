@@ -16,7 +16,7 @@ class SEO extends Component {
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
-      image = postMeta.cover;
+      image = postMeta.cover.childImageSharp.fixed;
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;
@@ -24,12 +24,12 @@ class SEO extends Component {
       image = config.siteLogo;
     }
 
-    if (
-      !image.match(
-        `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
-      )
-    )
-      image = urljoin(config.siteUrl, config.pathPrefix, image);
+    // if (
+    //   !image.match(
+    //     `(https?|ftp|file)://[-A-Za-z0-9+&@#/%?=~_|!:,.;]+[-A-Za-z0-9+&@#/%=~_|]`
+    //   )
+    // )
+    //   image = urljoin(config.siteUrl, config.pathPrefix, image);
 
     const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [

@@ -19,6 +19,8 @@ module.exports = {
     }
   },
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',
     {
@@ -72,8 +74,6 @@ module.exports = {
         color: config.themeColor
       }
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-twitter',
     'gatsby-plugin-sitemap',

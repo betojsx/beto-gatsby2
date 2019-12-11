@@ -3,8 +3,8 @@ layout: posts
 title: Minha Primeira Experiência Como Dev Nômade Digital Aos 22 Anos
 subtitle: ...e pouco mais de 01 ano como desenvolvedor web (há 03 meses freelancer remoto)
 thumbnail: assets/thumbnail-experiencia-digital-nomade.png
-cover: posts/images/experiencia-digital-nomade.png
-categories: [nomade-digital]
+cover: '../images/experiencia-digital-nomade.png'
+category: nomade-digital
 bg-color: orange
 date: 2018-02-18
 description: ''

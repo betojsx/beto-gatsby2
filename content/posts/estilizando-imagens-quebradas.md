@@ -3,8 +3,8 @@ layout: posts
 title: Estilizando imagens quebradas no seu site utilizando pseudoelementos
 subtitle: Substitua a mensagem padrão de erro e melhore a experiência da sua aplicação em poucos minutos.
 thumbnail_image: assets/styled-broken-image.jpeg
-cover: posts/images/styled-broken-image.jpeg
-categories: [front-end]
+cover: '../images/styled-broken-image.jpeg'
+category: front-end
 bg-color: purple
 date: 2018-07-22
 description: ''
@@ -21,7 +21,7 @@ Recentemente passei por uma necessidade de construir um previsualizador de image
 
 Acontece que deixando a tag `<img>` com o src vazio, o tal ícone padrão com o alt que eu havia definido deixava o aspecto final longe do visual que eu havia feito pro upload.
 
-!["Imagem com link quebrado estilizada"](images/styled-broken-image.jpeg)
+!["Imagem com link quebrado estilizada"](../images/styled-broken-image.jpeg)
 
 Lembrando de alguns artigos que havia lido há uns tempos quando estava aprendendo sobre **pseudoelementos**, resolvi fazer uma outra pesquisa e tentar deixar um visual legal com um ícone e fonte da minha escolha que se adaptasse à UI que estava criando.
 
