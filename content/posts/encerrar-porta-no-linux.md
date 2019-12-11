@@ -32,7 +32,7 @@ Na maioria dos casos eu percebo um erro nos seguintes casos:
 - Quando tento iniciar um docker
 - Quando quero iniciar um vagrant
 
-```js
+```bash
 Port 4200 is already in use. Use '--port' to specify a different port.
 npm ERR! code ELIFECYCLE
 npm ERR! errno 1

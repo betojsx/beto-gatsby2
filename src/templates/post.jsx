@@ -12,7 +12,7 @@ import config from '../../data/SiteConfig';
 import { Cover } from './post.style';
 import Image from 'gatsby-image';
 
-import './b16-tomorrow-dark.css';
+import './prism-atom-dark.css';
 import './post.css';
 
 export default class PostTemplate extends React.Component {

@@ -54,6 +54,31 @@ const GlobalStyles = createGlobalStyle`
     height: auto;
     margin: 0;
   }
+
+  .gatsby-highlight {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    width: calc(100% + 40px);
+    background: #1e1f21;
+  }
+
+  pre::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  pre::-webkit-scrollbar-track {
+      background: #c5c8c6;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+  
+  pre::-webkit-scrollbar-thumb {
+      background: #1d1f21;
+      border-radius: 10px;
+      box-shadow: inset 0 0 2px 1px rgba(110, 7, 183, 0.7); 
+      cursor: pointer;
+  }
   /* body.dark {
     --borders: #38444d;
     --texts: #8899a6;
