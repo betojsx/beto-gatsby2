@@ -77,6 +77,8 @@ Depois de identificar quais processos estão abertos no sistema ouvindo a porta 
 
 A nova versão será a exibida abaixo. Executar o comando no seu sistema irá encerrar os processos abertos. Tenha certeza de que é isso que quer fazer.
 
-`lsof -n -i4TCP:4200 | grep LISTEN | awk '{ print $2 }' | xargs kill`
+```bash
+lsof -n -i4TCP:4200 | grep LISTEN | awk '{ print $2 }' | xargs kill
+```
 
 Com isso as portas que estava querendo executar seu projeto no linux já estarão livres.
