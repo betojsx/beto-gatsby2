@@ -13,6 +13,24 @@ tags:
   - Trabalho Remoto
 ---
 
+<div class="note">
+
+_Atualização: 06/01/2020_
+
+Este post foi escrito em fevereiro de 2018 e na época meu objetivo era ter uma experiência como nomade digital por pelo menos 03 meses no Brasil antes de voltar para minha cidade natal.
+
+As coisas aconteceram um pouco diferente. Eu comecei a trabalhar alocado em São Paulo e não continuei viajando (como havia sido planejado).
+
+Na época eu tinha pouca experiência, e com isso poucos clientes para trabalhar como freelancer. Os que tinham consumiam muito mais tempo do que o esperado pela quantia que pagavam. Percebi que o melhor seria pegar aquela oportunidade e focar em aprimorar minhas habilidades, sobretudo em Javascript.
+
+De toda forma, o texto permanece e conta uma experiência bacana e inspiradora sobre as possibilidades de trabalhar remoto e viajar pagando barato.
+
+No momento que estava escrevendo esta atualização, percebi que a escrita também precisa ser melhorada e pretendo fazer uma nova atualização do post nos próximos dias.
+
+Aproveite para ler a versão original por enquanto.
+
+</div>
+
 **Nômade Digital vem sendo um dos termos mais falados de uns tempos pra cá. Nas gringas o termo já se tornou enjoativo; dentro do Brasil muitos aderiraram o estilo de vida e se mandaram. Mas onde estão os nômades de primeira viagem que iniciam sua experiência dentro do país?**
 
 Em 2017 eu estava cansado da vida acadêmica, como estudante de Ciência da Computação, e precisava dar conta de projetos paralelos que eu estava fazendo à parte da faculdade. Para manter minha motivação em alta e viver boas experiências, resolvi me tornar um nômade digital em 2018.

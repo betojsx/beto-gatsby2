@@ -90,6 +90,17 @@ const GlobalStyles = createGlobalStyle`
       height: 8px;
     }
   }
+
+  .note {
+    background: #fef6e4;
+    padding: 20px;
+    border-radius: 6px;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+    margin-bottom: 1.53rem;
+  }
   /* body.dark {
     --borders: #38444d;
     --texts: #8899a6;
