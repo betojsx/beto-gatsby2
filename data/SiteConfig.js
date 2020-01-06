@@ -5,7 +5,7 @@ const config = {
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
   siteUrl: 'https://betoo.com.br', // Domain of your website without pathPrefix.
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: 'Beto é Front End Developer e apaixonado por Javascript', // Website description used for RSS feeds/meta description tag.
+  siteDescription: 'Beto é Front End Developer autodidata.', // Website description used for RSS feeds/meta description tag.
   siteRss: '/rss.xml', // Path to the RSS file.
   siteFBAppID: '', // FB Application ID for using app insights
   googleAnalyticsID: '', // GA tracking ID.
@@ -20,7 +20,7 @@ const config = {
   userLocation: 'Recife, Brazil', // User location to display in the author segment.
   userAvatar: '/static/assets/images/profile-pic.jpg', // User avatar to display in the author segment.
   userDescription:
-    'Front End Developer há um ano trabalhando remoto. Curioso e autodidata. Abandonou Ciência da Computação para se dedicar a criar interfaces e fazer besteiras com JavaScript.', // User description to display in the author segment.
+    'Front Developer trabalhando remoto há cerca de um ano. Aqui compartilha experimentos, aprendizados e experiências sobre desenvolvimento web ou qualquer coisa que ache necessário ser explicado em mais de 500 palavras.', // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

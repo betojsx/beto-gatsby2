@@ -58,7 +58,7 @@ const Bio = props => {
           flexBasis: `calc(100% - 65px)`
         }}
       >
-        <strong>{siteTitleShort} ─ </strong> {userDescription}
+        <strong>{siteTitleShort}</strong> é {userDescription}
       </p>
       <UserInfo userTwitter={userTwitter} expanded />
     </div>
